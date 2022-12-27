@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
   get 'typehead/:prefix' => 'person#search'
   get 'typehead' => 'person#index'
+  post 'typehead/:prefix' => 'person#increase_popularity'
 end
 
 # Rails.application.routes.draw do
